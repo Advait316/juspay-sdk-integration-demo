@@ -68,10 +68,6 @@ class CheckoutActivity : AppCompatActivity() {
             // You can put your payload details here
             payload.put("order_id", order_id) // OrderID should be unique
             payload.put("amount", amountString) // Amount should be in strings e.g. "100.00"
-            payload.put("customer_id", "testing-customer-one") // Customer ID should be unique for each user and should be a string
-            payload.put("customer_email", "test@mail.com")
-            payload.put("customer_phone", "9876543201")
-            payload.put("action", "paymentPage")
 
             // For other payload params, you can refer to the integration doc shared with you
         } catch (e: Exception) {
